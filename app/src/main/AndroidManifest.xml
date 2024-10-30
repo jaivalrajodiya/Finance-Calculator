@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinanceCalculator"
+        tools:targetApi="31">
+        <activity
+            android:name=".Screen.Intro_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.Splash_Screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Screen.LoanComparisonCal_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.PriceCal_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.SWPCalculator_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.LoanEligibilityCal_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.ProfitabilityRatios_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.DebtPayoffCal_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.MortgageCal_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.RetirementCal_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.CompoundInterestCal_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.EmiCal_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/intro_bg"
+    tools:context=".Screen.Intro_Screen">
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#AE285D"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/outfit_bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="15dp"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:id="@+id/txt_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Effortlessly manage and calculate your investments with our suite of financial tools, designed to simplify every aspect of your financial planning"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txt_name"
+        android:textAlignment="center"
+        android:fontFamily="@font/outfit_medium"
+        android:layout_marginHorizontal="15dp"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:id="@+id/layout_letstart"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/letscal"
+        android:layout_below="@+id/txt_des"
+        android:layout_above="@+id/intro_img"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ImageView
+        android:id="@+id/intro_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/intro_imge"
+        android:adjustViewBounds="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

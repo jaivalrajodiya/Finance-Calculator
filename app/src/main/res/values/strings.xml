@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Finance Calculator</string>
+    <string-array name="compounding_frequency">
+        <item>Annually</item>
+        <item>Semi-Annually</item>
+        <item>Quarterly</item>
+        <item>Monthly</item>
+    </string-array>
+
+</resources>

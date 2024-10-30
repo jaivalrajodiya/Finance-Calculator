@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/iv_goBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/outfit_bold"
+                android:text="Compare Loan Calculator"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_reset"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/reset" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="#AE285D"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="Loan 1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="#AE285D"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="Loan 2"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/edit_bg"
+            android:backgroundTint="#E5E8EF"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="Loan Amount(₹)"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextLoan1Principal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_bg"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:hint="Enter Here"
+                    android:inputType="numberDecimal"
+                    android:padding="13dp"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextLoan2Principal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_bg"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:hint="Enter Here"
+                    android:inputType="numberDecimal"
+                    android:padding="13dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/edit_bg"
+            android:backgroundTint="#E5E8EF"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="Interest Rate (%)"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextLoan1InterestRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_bg"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:hint="Enter Here"
+                    android:inputType="numberDecimal"
+                    android:padding="13dp"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextLoan2InterestRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_bg"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:hint="Enter Here"
+                    android:inputType="numberDecimal"
+                    android:padding="13dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/edit_bg"
+            android:backgroundTint="#E5E8EF"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="Tenure(Year)"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextLoan1Tenure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_bg"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:hint="Enter Here"
+                    android:inputType="number"
+                    android:padding="13dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextLoan2Tenure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_bg"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:hint="Enter Here"
+                    android:inputType="number"
+                    android:padding="13dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <ImageView
+            android:id="@+id/buttonCompareLoans"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:src="@drawable/cal_now" />
+
+
+        <LinearLayout
+            android:id="@+id/result_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_bg"
+            android:backgroundTint="#E5E8EF"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/outfit_medium"
+                    android:text="EMI(Monthly Payment)"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_bg"
+                        android:layout_marginEnd="5dp"
+                        android:backgroundTint="#33AE285D">
+
+                        <TextView
+                            android:id="@+id/textViewMonthlyPaymentResult1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:fontFamily="@font/outfit_bold"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#AE285D"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/edit_bg"
+                        android:backgroundTint="#33AE285D">
+
+                        <TextView
+                            android:id="@+id/textViewMonthlyPaymentResult2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:fontFamily="@font/outfit_bold"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#AE285D"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewMonthlyPaymentDifference"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/outfit_bold"
+                    android:gravity="center"
+                    android:text="0"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#AE285D"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/outfit_medium"
+                    android:text="Total Interest Payable"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_bg"
+                        android:layout_marginEnd="5dp"
+                        android:backgroundTint="#33AE285D">
+
+                        <TextView
+                            android:id="@+id/textViewsIntersetpayableResult1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:fontFamily="@font/outfit_bold"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#AE285D"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/edit_bg"
+                        android:backgroundTint="#33AE285D">
+
+                        <TextView
+                            android:id="@+id/textViewsIntersetpayableResult2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:fontFamily="@font/outfit_bold"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#AE285D"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewTotalPaymentDifference"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/outfit_bold"
+                    android:gravity="center"
+                    android:text="0"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#AE285D"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/outfit_medium"
+                    android:text="Total Payment(Principal + Interest)"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_bg"
+                        android:layout_marginEnd="5dp"
+                        android:backgroundTint="#33AE285D">
+
+                        <TextView
+                            android:id="@+id/textViewtotalpaymentReslet1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:fontFamily="@font/outfit_bold"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#AE285D"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/edit_bg"
+                        android:backgroundTint="#33AE285D">
+
+                        <TextView
+                            android:id="@+id/textViewtotalpaymentReslet2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:fontFamily="@font/outfit_bold"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#AE285D"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
